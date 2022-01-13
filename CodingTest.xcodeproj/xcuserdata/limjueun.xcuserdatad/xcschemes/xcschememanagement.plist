@@ -67,6 +67,27 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
+		<key>FIFOLIFO (Playground) 1.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+		<key>FIFOLIFO (Playground) 2.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
+		<key>FIFOLIFO (Playground).xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>FunctionDevelopment (Playground) 1.xcscheme</key>
 		<dict>
 			<key>isShown</key>
