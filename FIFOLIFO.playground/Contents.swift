@@ -10,6 +10,7 @@ func solution(_ record: Array<String>) -> Array<Int>{
     }
     
     results.append(FIFO(recordArray)) //선입선출 시 매출원가
+    results.append(LIFO(recordArray))
     
     return results
 }
@@ -41,6 +42,45 @@ func FIFO(_ record: [[Substring]]) -> Int{
     return salesCost
 }
 
+//두 개의 스택을 생성해 풀이 -> 오답
+func LIFO(_ record: [[Substring]]) -> Int {
+    var record = record
+    var salesCost = 0 //매출원가
+    var soldOut = 0 //매진
+    var saleIndex = 0
+    
+    //후입 - 구매활동 배열 : 먼저 구매한 활동이 바닥. 가장 나중에 구매한 활동이 top
+    var sale:[(index: Int, price: Int, sales: Int)] = []
+    record.enumerated().forEach{
+        if $0.element[0] == "S" {
+            sale.append(($0.offset, Int($0.element[1])!, Int($0.element[2])!))
+        }
+    }
+    
+    saleIndex = sale[0].index - 1
+    sale.enumerated().forEach{
+        while sale[$0.offset].sales > 0 {
+            if saleIndex < 0 {
+                saleIndex = sale[$0.offset].index - 1
+            }
+            if sale[$0.offset].sales > Int(record[saleIndex][2])!{
+                sale[$0.offset].sales -= Int(record[saleIndex][2])!
+                salesCost += Int(record[saleIndex][1])! * Int(record[saleIndex][2])! //1500
+                record[saleIndex][2] = "0"  //상품 매진
+                saleIndex -= 1
+            }else {
+                salesCost += Int(record[saleIndex][1])! * sale[$0.offset].sales // 2100
+                record[saleIndex][2] = "\(Int(record[saleIndex][2])! - sale[$0.offset].sales)"
+                sale[$0.offset].sales = 0
+            }
+        }
+        saleIndex += soldOut
+    }
+    
+    
+    
+    return salesCost
+}
 
 
 print(solution(["P 300 6", "P 500 3", "S 1000 4", "P 600 2", "S 1200 1"])) //입출력 예 #1
