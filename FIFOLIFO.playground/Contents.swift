@@ -1,5 +1,12 @@
 import Foundation
 
+/*
+ 대형 마트와 같은 상품 판매 회사는 물품을 외부 거래처로부터 구매하여 일정 마진을 더한 후 고객에게 판매합니다.
+ 이때, 고객에게 상품을 판매하고 얻은 금액을 매출액이라 하고, 상품을 거래처로부터 구매할 때 지불한 금액을 매출원가라고 합니다.
+ 매출원가를 구하는 방법에는 선입선출법, 후입선출법 2가지 방법이 있습니다.
+ 선입선출법에서는 먼저 구매한 제춤이 먼저 판매된다고 가정을 하는 반면, 후입선출법에서는 나중에 구매한 제품이 먼저 판매가 된다고 가정합니다.
+ 상품 구입과 판매 기록이 주어졌을 때, 두 방법으로 각각 매출원가를 계산하여 비교하려고 합니다.
+ */
 func solution(_ record: Array<String>) -> Array<Int>{
     var results: [Int] = []
     //먼저 주어진 record의 값을 2차원 배열로 만든다.
@@ -26,17 +33,17 @@ func FIFO(_ record: [[Substring]]) -> Int{
             for i in 1...n { //현재 판매 전 구매한 활동을 돌아보며 수량 확인 및 판매 n은 현재 판매 인덱스
                 if sales > Int(record[saleIndex+i][2])!{ //판매수량이 현재 구매 수량보다 많을 경우,
                   salesCost += Int(record[saleIndex+i][1])! * Int(record[saleIndex+i][2])!
-                  sales -= Int(record[saleIndex+i][2])!
-                  record[saleIndex+i][2] = "0" //현재 상품(구매수량) 매진
-                  soldOut += 1
-                }else{ //판매수량이 현재 구매수량보다 적을 경우
-                  salesCost += Int(record[saleIndex+i][1])! * sales
-                  record[saleIndex+i][2] = "\(Int(record[saleIndex+i][2])! - sales)"
-                  sales = 0 //판매수량만큼 판매 완료
-                  break
+                      sales -= Int(record[saleIndex+i][2])!
+                      record[saleIndex+i][2] = "0" //현재 상품(구매수량) 매진
+                      soldOut += 1
+                    }else{ //판매수량이 현재 구매수량보다 적을 경우
+                      salesCost += Int(record[saleIndex+i][1])! * sales
+                      record[saleIndex+i][2] = "\(Int(record[saleIndex+i][2])! - sales)"
+                      sales = 0 //판매수량만큼 판매 완료
+                      break
+                    }
                 }
-            }
-            saleIndex += soldOut //매진된 상품의 인덱스를 기억해 이 다음 상품부터 판매한다.
+            saleIndex += soldOut //매진된 상품의 인덱스를 기억해 이 다음 상품부터 판매한다.]
         }
     }
     return salesCost
