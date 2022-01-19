@@ -1,9 +1,7 @@
-//
-//  main.swift
-//  studyCoding
-//
-//  Created by limyunhwi on 2022/01/19.
-//
+/*
+ https://www.acmicpc.net/problem/1874
+ 스택수열
+ */
 
 import Foundation
 
