@@ -13,6 +13,7 @@
 		9A80CB1C278EFF3C00C17534 /* BiggestNumber2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BiggestNumber2.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9A80CB1D278F266D00C17534 /* KthNumber.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = KthNumber.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9A80CB1F278F3E6100C17534 /* FIFOLIFO.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FIFOLIFO.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		9A87B78F27A14AE000FDDA83 /* JosephusProblem0.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = JosephusProblem0.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9AE1391D279838E400F1E1E0 /* StackSequence.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = StackSequence.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9AE13946279879BA00F1E1E0 /* RightBiggerNumber.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RightBiggerNumber.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9AE2A70B279191BA00A215A0 /* ClawMachineGame.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ClawMachineGame.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -22,6 +23,7 @@
 		9A42C1C127872DEE0034152C = {
 			isa = PBXGroup;
 			children = (
+				9A87B78F27A14AE000FDDA83 /* JosephusProblem0.playground */,
 				9A33025B279E8A3B0032ED30 /* Printer.playground */,
 				9AE13946279879BA00F1E1E0 /* RightBiggerNumber.playground */,
 				9AE1391D279838E400F1E1E0 /* StackSequence.playground */,
