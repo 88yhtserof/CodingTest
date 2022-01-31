@@ -9,6 +9,7 @@
 /* Begin PBXFileReference section */
 		9A33025B279E8A3B0032ED30 /* Printer.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Printer.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9A42C1C927872E600034152C /* FunctionDevelopment.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FunctionDevelopment.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		9A7E9D6B27A7BAE3003F4463 /* TruckCrossingTheBridge.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TruckCrossingTheBridge.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9A80CB1B278EC97900C17534 /* BiggestNumber.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BiggestNumber.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9A80CB1C278EFF3C00C17534 /* BiggestNumber2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BiggestNumber2.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9A80CB1D278F266D00C17534 /* KthNumber.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = KthNumber.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -24,6 +25,7 @@
 		9A42C1C127872DEE0034152C = {
 			isa = PBXGroup;
 			children = (
+				9A7E9D6B27A7BAE3003F4463 /* TruckCrossingTheBridge.playground */,
 				9A87B79027A1A27000FDDA83 /* Snake.playground */,
 				9A87B78F27A14AE000FDDA83 /* JosephusProblem0.playground */,
 				9A33025B279E8A3B0032ED30 /* Printer.playground */,
