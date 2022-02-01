@@ -43,6 +43,7 @@ class CircularLinkedList {
         newNode.leftLink = rear
         rear = newNode
         rear?.rightLink = front //원형 큐
+        front?.leftLink = rear
     }
     
     func remove(at: Int) -> Int? {
@@ -51,44 +52,36 @@ class CircularLinkedList {
         //빈 리스트일 경우
         if front == nil {return nil}
         
-        //첫 번째 원소일 경우
-        if at == 1 {
-            if front?.data == rear?.data {//노드가 하나일 경우
-                removedData = front!.data
-                finder = nil
-                front = nil
-                rear = nil
-                 
-                return removedData
+        //찾고자 하는 순서의 노드로 finder를 이동
+        if at != 1 {
+            for _ in 1..<at {
+                finder = finder?.rightLink
             }
-            //노드가 여러 개일 경우
-            removedData = front!.data
-            finder = front?.rightLink
-            front = front?.rightLink
-            
-            front?.leftLink = rear //원형 큐
-            rear?.rightLink = front
+        }
+        
+        //찾는 노드에 도착
+        removedData = finder!.data
+        
+        if front?.data == rear?.data{//노드가 하나일 때
+            finder = nil
+            front = nil
+            rear = nil
             
             return removedData
         }
         
-        //찾고자 하는 순서의 노드로 finder를 이동
-        for _ in 1..<at {
-            finder = finder?.rightLink
+        if finder?.data == front?.data {//찾은 노드가 첫 번째 노드일 때
+            front = front?.rightLink
+        }
+        if finder?.data == rear?.data { //찾은 노드가 마지막 노드일 때
+            rear = rear?.leftLink
         }
         
-        //찾는 노드에 도착
-        if finder?.rightLink?.data == front?.data {//찾는 노드가 마지막일 경우
-            removedData = finder!.data
-            rear = finder?.leftLink
-            rear?.rightLink = front //참조만 끊어주면 ARC에 의해 메모리 할당 해제
-        }else{
-            removedData = finder!.data
-            finder?.leftLink?.rightLink = finder?.rightLink
-            finder?.rightLink?.leftLink = finder?.leftLink
-            //참조만 끊어주면 ARC에 의해 메모리 할당 해제
-        }
-        finder = finder?.rightLink
+        finder?.leftLink?.rightLink = finder?.rightLink
+        finder?.rightLink?.leftLink = finder?.leftLink
+        //참조만 끊어주면 ARC에 의해 메모리 할당 해제
+        
+        finder = finder?.rightLink //방향 정하기
         
         return removedData
     }
