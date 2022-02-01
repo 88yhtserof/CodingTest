@@ -35,8 +35,9 @@ class CircularLinkedList {
             
             front?.leftLink = rear //원형 큐
             rear?.rightLink = front
+            
+            return
         }
-        
         //한 개 이상
         rear?.rightLink = newNode
         newNode.leftLink = rear
