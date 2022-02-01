@@ -193,6 +193,27 @@
 			<key>orderHint</key>
 			<integer>9</integer>
 		</dict>
+		<key>PopABalloon (Playground) 1.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>16</integer>
+		</dict>
+		<key>PopABalloon (Playground) 2.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>17</integer>
+		</dict>
+		<key>PopABalloon (Playground).xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>15</integer>
+		</dict>
 		<key>Printer (Playground) 1.xcscheme</key>
 		<dict>
 			<key>isShown</key>
