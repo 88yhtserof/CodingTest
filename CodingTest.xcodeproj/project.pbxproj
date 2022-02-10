@@ -12,6 +12,7 @@
 		9A4ED16B27A8F07200CE2A72 /* josephusProblem.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = josephusProblem.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9A4ED16C27A93F6000CE2A72 /* PopABalloon.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PopABalloon.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9A54FA4727B15DE10052C2FE /* PlaceCards.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PlaceCards.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		9A6606C627B4F32400C2FEB7 /* MakeColoredPaper.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MakeColoredPaper.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9A764B3B27B25B1E0009E668 /* NumberOfPapers.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = NumberOfPapers.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9A79201127AC0E2A00A0B888 /* Editor.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Editor.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9A7E9D6B27A7BAE3003F4463 /* TruckCrossingTheBridge.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TruckCrossingTheBridge.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -30,6 +31,7 @@
 		9A42C1C127872DEE0034152C = {
 			isa = PBXGroup;
 			children = (
+				9A6606C627B4F32400C2FEB7 /* MakeColoredPaper.playground */,
 				9A764B3B27B25B1E0009E668 /* NumberOfPapers.playground */,
 				9A54FA4727B15DE10052C2FE /* PlaceCards.playground */,
 				9A79201127AC0E2A00A0B888 /* Editor.playground */,
