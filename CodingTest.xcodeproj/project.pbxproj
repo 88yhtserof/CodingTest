@@ -26,12 +26,14 @@
 		9AE1391D279838E400F1E1E0 /* StackSequence.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = StackSequence.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9AE13946279879BA00F1E1E0 /* RightBiggerNumber.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RightBiggerNumber.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9AE2A70B279191BA00A215A0 /* ClawMachineGame.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ClawMachineGame.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		9AE5D5BC27C3B0F500C5D353 /* Virus.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Virus.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		9A42C1C127872DEE0034152C = {
 			isa = PBXGroup;
 			children = (
+				9AE5D5BC27C3B0F500C5D353 /* Virus.playground */,
 				9A6606C727B56FA400C2FEB7 /* Boggle.playground */,
 				9A6606C627B4F32400C2FEB7 /* MakeColoredPaper.playground */,
 				9A764B3B27B25B1E0009E668 /* NumberOfPapers.playground */,
