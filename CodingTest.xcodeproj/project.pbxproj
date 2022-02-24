@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		9A2CA61C27C761F800BD2D21 /* NumberingApartmentComplexes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberingApartmentComplexes.swift; sourceTree = "<group>"; };
 		9A33025B279E8A3B0032ED30 /* Printer.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Printer.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9A42C1C927872E600034152C /* FunctionDevelopment.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FunctionDevelopment.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9A4ED16B27A8F07200CE2A72 /* josephusProblem.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = josephusProblem.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -33,6 +34,7 @@
 		9A42C1C127872DEE0034152C = {
 			isa = PBXGroup;
 			children = (
+				9A2CA61C27C761F800BD2D21 /* NumberingApartmentComplexes.swift */,
 				9AE5D5BC27C3B0F500C5D353 /* Virus.playground */,
 				9A6606C727B56FA400C2FEB7 /* Boggle.playground */,
 				9A6606C627B4F32400C2FEB7 /* MakeColoredPaper.playground */,
